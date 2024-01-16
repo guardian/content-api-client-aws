@@ -1,9 +1,11 @@
 ### content-api-client-aws
-A library for helping with requests to an IAM-authorised AWS api-gateway.
+_A library for helping with requests to an IAM-authorised AWS api-gateway_
+
+[![Release](https://github.com/guardian/content-api-client-aws/actions/workflows/release.yml/badge.svg)](https://github.com/guardian/content-api-client-aws/actions/workflows/release.yml)
 
 Creates the necessary authorisation headers based on a request.
 E.g.
-```
+```scala
 import com.gu.contentapi.client.{IAMSigner, IAMEncoder}
 
 val signer = new IAMSigner(credentialsProvider, awsRegion))
