@@ -6,7 +6,7 @@ import com.amazonaws.DefaultRequest
 import com.amazonaws.auth.{AWS4Signer, AWSCredentialsProvider}
 import com.amazonaws.http.HttpMethodName
 
-import collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 
 /**
   * For api-gateway authorization.
