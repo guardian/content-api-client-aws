@@ -7,7 +7,7 @@ description:= "AWS helper functionality for using Guardian's Content API scala c
 organization := "com.gu"
 licenses := Seq(License.Apache2)
 scalaVersion := "2.13.12"
-crossScalaVersions := Seq(scalaVersion.value, "2.12.18")
+crossScalaVersions := Seq(scalaVersion.value, "2.12.19")
 scalacOptions ++= Seq("-feature", "-deprecation", "-unchecked", "-Xfatal-warnings", "-release:8")
 
 Test / testOptions +=
