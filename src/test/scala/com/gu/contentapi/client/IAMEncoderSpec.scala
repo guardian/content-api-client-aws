@@ -1,8 +1,9 @@
 package com.gu.contentapi.client
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class IAMEncoderSpec extends FlatSpec with Matchers {
+class IAMEncoderSpec extends AnyFlatSpec with Matchers {
   it should "encode a map of query params" in {
     IAMEncoder.encodeParams("a=b c&1=2,3") should be("a=b%20c&1=2%2C3")
   }
