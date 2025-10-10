@@ -62,8 +62,8 @@ class IAMSigner(credentialsProvider: AwsCredentialsProvider, awsRegion: String) 
         .putProperty(AwsV4FamilyHttpSigner.SERVICE_SIGNING_NAME, serviceName)
     }
 
-    signedRequest.request().headers().asScala.view
-      .mapValues(_.asScala.headOption.getOrElse(""))
+    signedRequest.request().headers().asScala
+      .map { case (k, v) => k -> v.asScala.headOption.getOrElse("") }
       .toMap
   }
 }
