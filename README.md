@@ -8,7 +8,7 @@ Creates the necessary authorisation headers based on a request.
 E.g.
 
 ```scala
-import com.gu.contentapi.client.IAMEncoder
+import com.gu.contentapi.client.{IAMEncoder, IAMSigner}
 
 val signer = new IAMSigner(credentialsProvider, awsRegion)
 
