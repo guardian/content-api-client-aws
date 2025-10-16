@@ -6,8 +6,8 @@ name:= "content-api-client-aws"
 description:= "AWS helper functionality for using Guardian's Content API scala client"
 organization := "com.gu"
 licenses := Seq(License.Apache2)
-scalaVersion := "2.13.14"
-crossScalaVersions := Seq(scalaVersion.value, "2.12.19")
+scalaVersion := "2.13.17"
+crossScalaVersions := Seq(scalaVersion.value, "2.12.20")
 scalacOptions ++= Seq("-feature", "-deprecation", "-unchecked", "-Xfatal-warnings", "-release:8")
 
 Test / testOptions +=
@@ -29,7 +29,7 @@ releaseProcess := Seq[ReleaseStep](
 
 resolvers ++= Resolver.sonatypeOssRepos("releases")
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.0.9" % Test,
-  "org.scala-lang.modules" %% "scala-collection-compat" % "2.12.0",
+  "org.scalatest" %% "scalatest" % "3.2.19" % Test,
+  "org.scala-lang.modules" %% "scala-collection-compat" % "2.14.0",
   "software.amazon.awssdk" % "auth" % "2.35.3",
 )
