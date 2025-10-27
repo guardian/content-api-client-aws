@@ -17,7 +17,7 @@ class IAMSigner(credentialsProvider: AwsCredentialsProvider, awsRegion: String) 
   private val serviceName = "execute-api"
   private val signer = AwsV4HttpSigner.create()
 
-  val credentials = credentialsProvider.resolveCredentials()
+  def credentials = credentialsProvider.resolveCredentials()
 
   /**
     * Returns the given set of headers, updated to include AWS sig4v signed headers based on the request and the credentials
