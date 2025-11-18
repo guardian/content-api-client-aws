@@ -6,7 +6,7 @@ name:= "content-api-client-aws"
 description:= "AWS helper functionality for using Guardian's Content API scala client"
 organization := "com.gu"
 licenses := Seq(License.Apache2)
-scalaVersion := "2.13.14"
+scalaVersion := "2.13.17"
 crossScalaVersions := Seq(scalaVersion.value, "2.12.19")
 scalacOptions ++= Seq("-feature", "-deprecation", "-unchecked", "-Xfatal-warnings", "-release:8")
 
