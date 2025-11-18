@@ -29,7 +29,7 @@ releaseProcess := Seq[ReleaseStep](
 
 resolvers ++= Resolver.sonatypeOssRepos("releases")
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.0.9" % Test,
+  "org.scalatest" %% "scalatest" % "3.2.19" % Test,
   "org.scala-lang.modules" %% "scala-collection-compat" % "2.12.0",
   "software.amazon.awssdk" % "auth" % "2.35.3",
 )

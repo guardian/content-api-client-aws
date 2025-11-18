@@ -3,9 +3,10 @@ package com.gu.contentapi.client
 import software.amazon.awssdk.auth.credentials.AwsCredentialsProvider
 import software.amazon.awssdk.auth.credentials.{AwsBasicCredentials, StaticCredentialsProvider}
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class IAMSignerSpec extends FlatSpec with Matchers {
+class IAMSignerSpec extends AnyFlatSpec with Matchers {
 
   val credentials = AwsBasicCredentials.create("test-access-key", "test-secret-key")
   val credentialsProvider: AwsCredentialsProvider = StaticCredentialsProvider.create(credentials)
