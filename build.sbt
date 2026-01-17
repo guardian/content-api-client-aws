@@ -31,5 +31,5 @@ resolvers ++= Resolver.sonatypeOssRepos("releases")
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.9" % Test,
   "org.scala-lang.modules" %% "scala-collection-compat" % "2.12.0",
-  "software.amazon.awssdk" % "auth" % "2.35.3",
+  "software.amazon.awssdk" % "auth" % "2.35.7",
 )
